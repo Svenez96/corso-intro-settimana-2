@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -19,7 +22,7 @@
   </head>
   <body>
     <header>
-      <nav class="nav_container">
+      <nav id="nav_container">
         <div class="nav_left">
           <a href="#">Pizza Pie</a>
         </div>
@@ -41,11 +44,15 @@
       </nav>
     </header>
     <main>
-      <section class="home">
+
+      <section id="home">
         <div class="home_left">
           <h1>Pizza Taste</h1>
-          <h2>The tasty pizza of your choice</h2>
-          <a id="btn" href="#">View Menu</a>
+          <h2 class="text_section">
+            The tasty pizza of <br />
+            your choice
+          </h2>
+          <a class="btn" href="#">View Menu</a>
         </div>
         <div class="home_right">
           <img
@@ -54,31 +61,113 @@
           />
         </div>
       </section>
-      <section class="about">
+
+      <section id="about">
         <div class="about_left">
-          <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__480.jpg" alt="a pizza with olives" />
+          <img
+            src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__480.jpg"
+            alt="a pizza with olives"
+          />
         </div>
         <div class="about_right">
-          <span>About Us</span>
-          <h2>We make good and tasty pizzas</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quo iure rem ducimus tenetur deserunt commodi doloribus, quibusdam vel fuga?</p>
-          <a id="btn" href="#">Learn More</a>
+          <span class="title_section">About Us</span>
+          <h2 class="text_section">We make good and <br />tasty pizzas</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quo
+            iure rem ducimus tenetur deserunt commodi doloribus, quibusdam vel
+            fuga?
+          </p>
+          <a class="btn" href="#">Learn More</a>
         </div>
       </section>
-      <section class="heading">
-        <div class="menu">
-          <span>Menu</span>
-          <h2>Tasty menu of the week</h2>
+
+      <section id="menu">
+        <div class="menu_top">
+          <span class="title_section">Menu</span>
+          <h2 class="text_section">Tasty menu of the week</h2>
         </div>
-        <div class="box_container">
-          <div class="box"><div class="box_img"><img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?cs=srgb&dl=pexels-beqa-tefnadze-803290.jpg&fm=jpg" alt=""></div></div>
-          <div class="box"><div class="box_img"><img src="https://img.freepik.com/free-photo/pepperoni-pizza-with-sausages-cheese-dark-wooden-table_220768-9277.jpg?size=626&ext=jpg" alt=""></div></div>
-          <div class="box"><div class="box_img"><img src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=740&t=st=1661842808~exp=1661843408~hmac=c40f0c154036b96b1dba17947c4e4f7c07f40db983106490402bb0b7b6ec452e" alt=""></div></div>
+        <div class="menu_bottom">
+          <div class="menu_bottom_card">
+          <div class="menu_bottom_card_img_container">
+            <img
+              src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?cs=srgb&dl=pexels-beqa-tefnadze-803290.jpg&fm=jpg"
+              alt="pizza with cheese"
+            />
+          </div>
+          <h3>Cheese Pizza</h3>
+          <p>Tasty Food</p>
+          <span>$30.05</span>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="menu_bottom_card">
+          <div class="menu_bottom_card_img_container">
+            <img
+              src="https://img.freepik.com/free-photo/pepperoni-pizza-with-sausages-cheese-dark-wooden-table_220768-9277.jpg?size=626&ext=jpg"
+              alt="pizza with pepperoni"
+            />
+          </div>
+          <h3>Tropical Pizza</h3>
+          <p>Tasty Food</p>
+          <span>$42.05</span>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="menu_bottom_card">
+          <div class="menu_bottom_card_img_container">
+            <img
+              src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=740&t=st=1661842808~exp=1661843408~hmac=c40f0c154036b96b1dba17947c4e4f7c07f40db983106490402bb0b7b6ec452e"
+              alt="pizza with mushrooms and olives"
+            />
+          </div>
+          <h3>Macaroni Pizza</h3>
+          <p>Tasty Food</p>
+          <span>$12.05</span>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+</div> 
+      </section>
+
+      <section id="services">
+        <div class="services_top">
+          <span class="title_section">Services</span>
+          <h2 class="text_section">We provide best food services</h2>
+        </div>
+        <div class="services_bottom">
+          <div class="services_bottom_card">
+            <div class="services_bottom_card_img_container">
+              <img src="https://images.pexels.com/photos/280453/pexels-photo-280453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="a pizza in a box">
+            </div>
+            <h3>You Order</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
+          </div>
+          <div class="services_bottom_card">
+            <div class="services_bottom_card_img_container">
+              <img src="https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="a courier truck shipping some pizzas">
+            </div>
+            <h3>Shipping</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
+          </div>
+          <div class="services_bottom_card">
+            <div class="services_bottom_card_img_container">
+              <img src="https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="a courier delivering some pizzas">
+            </div>
+            <h3>Delivered</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
+          </div>
         </div>
       </section>
-      <section></section>
-      <section></section>
+      <section id="contact_us">
+        <div class="contacts_us_left">
+          <span class="title_section">Let's Talk</span>
+          <h2 class="text_section">Connect now</h2>
+        </div>
+        <div class="contacts_us_right">
+          <a class="btn" href="">Contact us</a>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer id="footer_list">
+      <ul></ul>
+
+    </footer>
   </body>
 </html>
