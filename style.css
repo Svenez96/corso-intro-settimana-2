@@ -248,3 +248,40 @@ section {
 
 /* -----------------------------------FOOTER---------------------------------------- */
 
+#contacts{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 50px 10%;
+}
+
+#contacts li{
+    list-style: none;
+}
+
+.contacts_title{
+    margin-bottom: 1rem;
+}
+
+.contacts_left{
+
+}
+
+.contacts_left_socials{
+    margin-top: 1rem;  
+}
+
+.contacts_left_socials i{
+    margin-right: 1rem;
+    color: var(--text-color);
+}
+
+.contacts_right i{
+    margin-right: 1rem;    
+}
+
+.copyright{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
