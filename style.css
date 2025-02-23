@@ -45,11 +45,16 @@
     padding: 10px 20px; 
     font-weight: 500;
     font-size: 1rem;
+    color: var(--text-color);  
+}
+
+.nav_right ul li a{
+    text-decoration: none;
     color: var(--text-color);
 }
 
 
-.nav_right ul li:hover{
+.nav_right ul li a:hover{
     color: var(--main-color);
 }
 
@@ -248,11 +253,20 @@ section {
 
 /* -----------------------------------FOOTER---------------------------------------- */
 
-#contacts{
+#contacts .contacts-container{
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
     padding: 50px 10%;
+}
+
+#contacts a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#contacts a:hover{
+    color: var(--main-color);
 }
 
 #contacts li{
@@ -263,17 +277,12 @@ section {
     margin-bottom: 1rem;
 }
 
-.contacts_left{
-
-}
-
 .contacts_left_socials{
     margin-top: 1rem;  
 }
 
 .contacts_left_socials i{
     margin-right: 1rem;
-    color: var(--text-color);
 }
 
 .contacts_right i{
